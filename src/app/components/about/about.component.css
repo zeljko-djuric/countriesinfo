@@ -1,0 +1,20 @@
+.wrapper {
+  height: 21rem;
+  width: 100%;
+  background-color: #843e64;
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  color: #eb6536;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.content {
+  color: #eb6536;
+  font-size: 1.2rem;
+  margin: 1rem;
+  margin-top: 3rem;
+}
