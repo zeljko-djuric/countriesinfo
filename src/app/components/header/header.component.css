@@ -1,0 +1,19 @@
+.header {
+  height: 7em;
+  width: 100%;
+  background-color: #5e2750;
+  color: #e95420;
+}
+
+.title {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.route-dashboard {
+  font-size: 1.2rem;
+  color: #e95420;
+  text-decoration: none;
+  font-weight: 700;
+  padding-left: 3rem;
+}
