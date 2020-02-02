@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 25rem;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 5rem;
+  padding: 10px;
+  background: #5e2750;
+  color: white;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #eb6536;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.example {
+  padding-left: 24rem;
+}
+
+.wrapper {
+  background-color: #843e64;
+  height: 27rem;
+  width: 100%;
+}
+
+.title {
+  color: #eb6536;
+  margin-top: 0;
+  padding-left: 26rem;
+  padding-top: 2rem;
+}
