@@ -8,6 +8,7 @@
 .title {
   padding-left: 1rem;
   padding-top: 1rem;
+  margin-top: 0;
 }
 
 .route-link {

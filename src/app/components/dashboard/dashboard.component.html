@@ -9,7 +9,7 @@
   <form class="example" action="action_page.php">
     <input
       type="text"
-      placeholder="Please enter a city name"
+      placeholder="Please enter a country name"
       name="search"
       [(ngModel)]="userInput"
     />
@@ -18,29 +18,22 @@
     </button>
   </form>
 
-  <div *ngFor="let info of contryInfo">
-    <img
-      src="{{ contryInfo[0].flag }}"
-      class="image"
-      alt="Smiley face"
-      height="142"
-      width="142"
-    />
-    <h3 class="native-name">Native name: {{ contryInfo[0].nativeName }}</h3>
-    <h3 class="capital">
-      Capital city: {{ contryInfo[0].capital }} Population:
+  <div class="main-content" *ngFor="let info of contryInfo">
+    <img src="{{ contryInfo[0].flag }}" class="image" alt="Smiley face" />
+
+    <h3 class="headers">Native name: {{ contryInfo[0].nativeName }}</h3>
+    <h3 class="headers">
+      Capital city: {{ contryInfo[0].capital }}, Country population:
       {{ contryInfo[0].population }}
     </h3>
-    <h3 class="region">
+    <h3 class="headers">
       Region: {{ contryInfo[0].region }}, Subregion:
       {{ contryInfo[0].subregion }}
     </h3>
-    <h3 class="currencies">
-      Currencies: {{ contryInfo[0].currencies[0].name }}
+    <h3 class="headers">Currencies: {{ contryInfo[0].currencies[0].name }}</h3>
+    <h3 class="headers">
+      Top level domain: {{ contryInfo[0].topLevelDomain }}
     </h3>
-    <h3 class="calling-code">
-      Top level domain: {{ contryInfo[0].topLevelDomain }}, Timezones:
-      {{ contryInfo[0].timezones }}
-    </h3>
+    <h3 class="headers">Timezones: {{ contryInfo[0].timezones }}</h3>
   </div>
 </div>

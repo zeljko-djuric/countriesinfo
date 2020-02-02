@@ -41,8 +41,9 @@ form.example::after {
 
 .wrapper {
   background-color: #843e64;
-  height: 27rem;
+  height: 32rem;
   width: 100%;
+  padding-left: 4rem;
 }
 
 .title {
@@ -50,4 +51,13 @@ form.example::after {
   margin-top: 0;
   padding-left: 26rem;
   padding-top: 2rem;
+}
+
+.image {
+  height: 125px;
+  width: 250px;
+}
+
+.headers {
+  color: #eb6536;
 }
