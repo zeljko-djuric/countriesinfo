@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http";
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
-  public getNews() {
+  public getData() {
     return this.httpClient.get(`https://restcountries.eu/rest/v2/all`);
   }
 }
