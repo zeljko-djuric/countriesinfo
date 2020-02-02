@@ -17,4 +17,30 @@
       <i class="fa fa-search"></i>
     </button>
   </form>
+
+  <div *ngFor="let info of contryInfo">
+    <img
+      src="{{ contryInfo[0].flag }}"
+      class="image"
+      alt="Smiley face"
+      height="142"
+      width="142"
+    />
+    <h3 class="native-name">Native name: {{ contryInfo[0].nativeName }}</h3>
+    <h3 class="capital">
+      Capital city: {{ contryInfo[0].capital }} Population:
+      {{ contryInfo[0].population }}
+    </h3>
+    <h3 class="region">
+      Region: {{ contryInfo[0].region }}, Subregion:
+      {{ contryInfo[0].subregion }}
+    </h3>
+    <h3 class="currencies">
+      Currencies: {{ contryInfo[0].currencies[0].name }}
+    </h3>
+    <h3 class="calling-code">
+      Top level domain: {{ contryInfo[0].topLevelDomain }}, Timezones:
+      {{ contryInfo[0].timezones }}
+    </h3>
+  </div>
 </div>
