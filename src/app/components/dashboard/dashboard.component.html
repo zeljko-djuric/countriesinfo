@@ -7,7 +7,14 @@
   <h2 class="title">Let's explore your next destination!</h2>
 
   <form class="example" action="action_page.php">
-    <input type="text" placeholder="Please enter a city name" name="search" />
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <input
+      type="text"
+      placeholder="Please enter a city name"
+      name="search"
+      [(ngModel)]="userInput"
+    />
+    <button type="submit" (click)="getCountryInfo(userInput)">
+      <i class="fa fa-search"></i>
+    </button>
   </form>
 </div>

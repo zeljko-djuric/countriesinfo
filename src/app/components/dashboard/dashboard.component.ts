@@ -7,6 +7,9 @@ import { ApiService } from "../../api.service";
   styleUrls: ["./dashboard.component.css"]
 })
 export class DashboardComponent implements OnInit {
+  getCountryInfo(userInput: any) {
+    console.log(userInput);
+  }
   constructor(private apiService: ApiService) {}
 
   rawdata: any;

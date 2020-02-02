@@ -7,6 +7,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { AboutComponent } from "./components/about/about.component";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { HttpClientModule } from "@angular/common/http";
     DashboardComponent,
     AboutComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
